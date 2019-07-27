@@ -3,5 +3,13 @@ spring:
   application:
     name: majiangcommunity
 
+#端口号
 server:
   port: 8888
+
+github:
+  client:
+    id: bab8e840f32b2660e3b0
+    secret: 5f1ec6b96cffc46f8af5d386aee6f584f87ff056
+  redirect:
+    uri: http://localhost:8888/callback
