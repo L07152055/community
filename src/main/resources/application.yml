@@ -3,6 +3,13 @@ spring:
   application:
     name: majiangcommunity
 
+  #持久化配置
+  datasource:
+    url: jdbc:h2:~/community
+    username: sa
+    password: 123
+    driver-class-name: org.h2.Driver
+
 #端口号
 server:
   port: 8888
@@ -13,3 +20,4 @@ github:
     secret: 5f1ec6b96cffc46f8af5d386aee6f584f87ff056
   redirect:
     uri: http://localhost:8888/callback
+
