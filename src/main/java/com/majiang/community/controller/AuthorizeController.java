@@ -53,7 +53,8 @@ public class AuthorizeController {
             user.setName(githubUser.getName());
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
-            //userMapper.insert(user);
+            // 写入DB相当于写入Session
+            userMapper.insert(user);
             response.addCookie(new Cookie("token", token));
             //request.getSession().setAttribute("user", user);
             // 重定向
