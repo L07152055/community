@@ -21,3 +21,6 @@ github:
   redirect:
     uri: http://localhost:8888/callback
 
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

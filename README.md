@@ -11,6 +11,8 @@
 
 [OKHttp](https://square.github.io/okhttp/)
 
+[Flywat](https://flywaydb.org/getstarted/firststeps/maven)
+
 ### 工具
 
 
@@ -25,4 +27,8 @@ CREATE CACHED TABLE PUBLIC.USER(
     GMT_CREATE BIGINT,
     GMT_MODIFIED BIGINT
 )
+```
+
+```bash
+mvn flyway:migrate
 ```
